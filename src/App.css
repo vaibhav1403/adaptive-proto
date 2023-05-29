@@ -1,0 +1,112 @@
+body {
+  font-family: 'Raleway', sans-serif;
+  background: rgba(70,26,66);
+}
+
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+.selected-option {
+  border: 1px solid #ababab;
+}
+
+.answer-container {
+  display: flex;
+  justify-content: center;
+}
+
+.header-container {
+  padding: 20px 20px;
+  background: rgba(0,0,0,0.4);
+  border-radius: 6px;
+  text-align: left;
+}
+
+.header-container button {
+  margin: 0 15px;
+ }
+
+.q-container {
+  height: 200px;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  margin: 38px 0px;
+  background: rgba(0,0,0,0.4) !important;
+  color: #FFF !important;
+  font-size: 28px;
+}
+
+.option-container {
+    /* flex-direction: row; */
+    display: flex;
+    /* align-items: flex-start; */
+    /* justify-content: center; */
+    height: 200px;
+    /* display: inline-block; */
+    vertical-align: center;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border: 1px solid #CACACA;
+    border-radius: 8px;
+    cursor: pointer;
+    padding: 0 !important;
+    background-color: rgba(0,0,0,0.2);
+    color: #FFF;
+    font-weight: bold;
+    font-size: 24px;
+
+    &:hover {
+      background-color: rgba(0,0,0,0.4);
+    }
+    
+    &.selected-option {
+      background-color: rgba(0,0,0,0.6);
+    }
+}
+
+.footer-container {
+  margin-top: 30px;
+}
+
+.submit-btn {
+  width: 50%;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
