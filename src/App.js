@@ -11,7 +11,7 @@ import Snackbar from '@mui/material/Snackbar';
 
 import logo from './logo.svg';
 import './App.css';
-import { Q_BANK } from './questionBank';
+import { Q_BANK } from './questionBank1';
 
 const MAX_DEPTH = 3;
 const EASY_DIFF = "EASY";
@@ -20,15 +20,15 @@ const HARD_DIFF = "HARD";
 const HARD_DONE_DIFF = "HARD_DONE";
 
 const MAX_QUEST = {
-  [EASY_DIFF]: 5, // Maximum number of questions to be asked in Easy level
-  [MEDIUM_DIFF]: 5, // Maximum number of questions to be asked in Medium level
-  [HARD_DIFF]: 5, // Maximum number of questions to be asked in Hard level
+  [EASY_DIFF]: 7, // Maximum number of questions to be asked in Easy level
+  [MEDIUM_DIFF]: 8, // Maximum number of questions to be asked in Medium level
+  [HARD_DIFF]: 9, // Maximum number of questions to be asked in Hard level
 };
 
 const MIN_QUEST = {
-  [EASY_DIFF]: 3, // Minimum number of questions to be asked in Easy level
-  [MEDIUM_DIFF]: 3, // Minimum number of questions to be asked in Medium level
-  [HARD_DIFF]: 3, // Minimum number of questions to be asked in Hard level
+  [EASY_DIFF]: 5, // Minimum number of questions to be asked in Easy level
+  [MEDIUM_DIFF]: 5, // Minimum number of questions to be asked in Medium level
+  [HARD_DIFF]: 5, // Minimum number of questions to be asked in Hard level
 };
 
 const EASY_THRESHOLD = 0.8; // Minimum percentage of correct answers required for proficiency at Easy difficulty
@@ -299,6 +299,9 @@ function App() {
                 <Fab variant="extended" size="small" color="secondary" aria-label="add">
                   <span>Proficiency - {questionsAnswered ? (correctAnswered / questionsAnswered) : ''}</span>
                 </Fab>
+
+               
+
               </div>
 
               <Paper elevation={2} className="q-container">
